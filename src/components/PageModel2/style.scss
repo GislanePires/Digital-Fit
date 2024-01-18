@@ -1,0 +1,147 @@
+.container-PageModel2 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 90svh;
+  text-align: center;
+
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
+    max-height: none;
+  }
+
+  .children {
+    width: 100%;
+    z-index: 1;
+    padding-top: 20px;
+    // overflow-y: scroll;
+    // overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
+
+    &-left {
+      // box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -5px;
+        bottom: 0;
+        width: 5px;
+        /* Largura da sombra esquerda */
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.3), transparent);
+      }
+    }
+
+    &-right {
+      // box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.3);
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -5px;
+        bottom: 0;
+        width: 5px;
+        /* Largura da sombra esquerda */
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent);
+      }
+    }
+
+    &-top {
+      // position: relative;
+      // z-index: 1;
+
+      // &::before {
+      //   content: '';
+      //   position: absolute;
+      //   top: 0;
+      //   left: 0;
+      //   bottom: 0;
+      //   width: 100%; /* Largura da sombra esquerda */
+      //   background: linear-gradient(to top, rgba(250, 250, 250, 0.9), transparent);
+      // }
+    }
+  }
+
+  .imagemBg {
+    display: flex;
+    align-items: center;
+  
+
+    .imagemBgPosition-left {
+      // box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.3);
+      object-position: right;
+    }
+
+    .imagemBgPosition-right {
+      // box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.3);
+      object-position: left;
+    }
+
+    .imagemBgPosition-top {
+      // box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    }
+
+    .objImgPosition-left {
+      object-position: left;
+    }
+
+    .imagemBgPosition-top {
+      object-position: top !important;
+    }
+
+    .objImgPosition-right {
+      object-position: right;
+    }
+
+    .objImgPosition-center {
+      object-position: center;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+  }
+
+  .imagemBg-top {
+    width: 100%;
+    max-width: 100%;
+    height: 80svh;
+  }
+
+  .container-children {
+    flex-direction: column;
+    display: flex;
+    max-height: 90%;
+    height: 90%;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.container-PageModel1-top {
+  display: contents;
+}
+
+@media screen and (max-width: 500px) {
+  .obj-container {
+    align-items: center;
+  }
+
+  .yogaImg img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,82 @@
+.gpt {
+    .container-gpt {
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+
+        .gpt-left-column,
+        .gpt-right-column {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0 20px;
+            justify-content: center;
+
+            .gpt-container-text,  .gpt-container-text-pergunta{
+                background-color: var(--cinza-primario);
+                border-radius: 15px;
+                margin: 20px 0;
+                padding: 10px 15px;
+                align-self: center;
+                width: 90%;
+                min-height: 100px;
+                max-height: 600px;
+
+                textarea {
+                    border: none;
+                    width: 100%;
+                    height: 100%;
+                    outline: none;
+                    resize: none;
+                    background-color: transparent;
+                    height: 590px;
+
+                    // Alterações para tornar o input multilinha
+                    overflow-y: auto;
+                    text-align: left;
+                    word-break: keep-all;
+
+                    &::-webkit-scrollbar {
+                        width: 3px;
+                    }
+                }
+            }
+
+            .gpt-container-text{
+                min-height: 600px;
+            }
+
+            .gpt-container-text-pergunta{
+                background-color: transparent;
+                border: 3px solid var(--cinza-primario);
+                height: 5vh;
+            }
+        }
+    }
+
+    .botao {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    .botaoPreparar{
+        background: var(--laranja-header);
+        width: 100px;
+        height: 37px;
+        font-weight: 600;
+        border-radius: 8px;
+        color: #fff;
+        cursor: pointer;
+        border: none;
+        padding-left: 15px;
+        padding-right: 15px;
+        transition: transform .3s;
+        font-size: 15px;
+    }
+    
+    .botaoPreparar:hover {
+        background-color: var(--azul-escuro);
+        transform: scale(1.1);
+        filter: brightness(0.95);
+    }
+}

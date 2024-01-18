@@ -1,0 +1,53 @@
+.inputCadastroDePerfilTopo {
+  width: 100%;
+  height: 20%;
+
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center;
+}
+
+.alinhamentoDeBotao {
+  display: flex;
+  flex-direction: column;
+
+  .quadradosPai {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 0 5% 0;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: row !important;
+    width: 100%;
+    height: 100%;
+  }
+
+  .botaoCadastroDePerfil {
+    background: var(--laranja-header);
+    width: 100px;
+    height: 37px;
+    font-weight: 600;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 50px;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: transform .3s;
+    font-size: 15px;
+  }
+
+  .botaoCadastroDePerfil:hover {
+    background-color: var(--azul-escuro);
+    transform: scale(1.1);
+    filter: brightness(0.95);
+}
+}

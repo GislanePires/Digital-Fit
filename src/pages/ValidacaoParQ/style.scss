@@ -1,0 +1,36 @@
+.auditoria-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.info-item {
+    margin: 20px;
+}
+
+.scrollable-cell {
+    overflow: auto;
+    display: inline-block;
+
+}
+
+
+.container-parq{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-buscar{
+    margin-bottom: 20px;
+}
+
+.paginacao {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

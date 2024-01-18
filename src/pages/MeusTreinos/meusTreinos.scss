@@ -1,0 +1,98 @@
+.Objetivos-treinos {
+  &-titulo {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+}
+
+.treinos-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 65px;
+
+  .go-to-treinos {
+    background: var(--laranja-header);
+    width: 120px;
+    height: 50px;
+    font-weight: 600;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: transform 0.3s;
+    font-size: 15px;
+  }
+
+  .go-to-treinos:hover {
+    background-color: var(--azul-escuro);
+    transform: scale(1.1);
+    filter: brightness(0.95);
+  }
+
+  .treino-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    .treino-button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+        box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+      &:hover {
+        transform: translateY(-10px);
+      }
+      .treino {
+        width: min-content;
+        background: var(--cinza-claro);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 8px 8px 8px 4px rgba(0, 0, 0, 0.2);
+
+        &-title {
+          text-align: center;
+        }
+
+        &-image {
+          width: 225px;
+          padding: 20px 16px;
+          mix-blend-mode: multiply;
+          height: 300px;
+          object-fit: contain;
+        }
+
+        &-descricao {
+          text-align: center;
+        }
+      }
+    }
+    .remove-treino {
+      border: none;
+      padding: 20px;
+      font-weight: 700;
+      color: #fff;
+      border-radius: 12px;
+      cursor: pointer;
+      background: var(--laranja-header);
+      padding-left: 15px;
+      padding-right: 15px;
+      transition: transform 0.3s;
+      font-size: 15px;
+
+      &:hover {
+        background-color: var(--azul-escuro);
+        transform: scale(1.1);
+        filter: brightness(0.95);
+      }
+    }
+  }
+}

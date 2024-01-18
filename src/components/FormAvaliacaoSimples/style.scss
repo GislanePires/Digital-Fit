@@ -1,0 +1,158 @@
+.avaliacao-simlificada-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+  gap: 30px;
+
+  h1{
+    text-align: center;
+  }
+
+  .form-avaliacao {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(100, 95, 95);
+    border-radius: 7px;
+    height: auto;
+    margin-bottom: 12px;
+  }
+
+  .form-avaliacao-simplificada {
+    height: auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    max-width: 800px;
+    border: 1px solid rgb(100, 95, 95);
+    border-radius: 8px;
+
+    .checkbox-fisico {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 40px;
+    }
+    .checkbox-opcao {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      gap: 15px;
+    }
+    #flexoes,
+    #abdominais {
+      border: 1px solid var(--azul-escuro);
+      border-radius: 10px;
+      width: 130px;
+      height: 35px;
+    }
+    .red-text {
+      color: red;
+    }
+    .container-abdominal .label {
+      align-items: center;
+      margin-top: 20px;
+    }
+    .texto-input {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      color: var(--azul-escuro);
+    }
+    .Control-Buttons {
+      display: flex;
+      justify-content: center;
+    }
+    .stop-watch .btn-grp,
+    .stop-watch2 .btn-grp {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      gap: 50px;
+    }
+
+    .stop-watch .btn,
+    .stop-watch2 .btn {
+      width: 100px;
+      background: var(--azul-escuro);
+      padding: 13px 45px 13px 28px;
+      margin-bottom: 10px;
+      gap: 10px;
+      border-radius: 30px;
+      text-decoration: none;
+      border: none;
+      font-size: 13px;
+      color: var(--branco-primario);
+      text-align: center;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .stop-watch .btn-one,
+    .stop-watch2 .btn-one {
+      background: var(--laranja-header);
+      padding: 13px 45px 13px 28px;
+      border-radius: 30px;
+      text-decoration: none;
+      border: none;
+      font-size: 17px;
+      color: var(--branco-primario);
+      text-align: center;
+      transition: 0.2s;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+      width: 90%;
+    }
+
+    .stop-watch .btn-two,
+    .stop-watch2 .btn-two {
+      background: var(--azul-escuro);
+    }
+
+    .stop-watch .btn:hover,
+    .stop-watch2 .btn:hover {
+      opacity: 0.8;
+    }
+    .container-flexao,
+    .container-abdominal {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      margin-top: 40px;
+      gap: 15px;
+
+      .input-button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @media (max-width: 540px) {
+        align-items: center;
+      }
+    }
+    .div-Button-Avaliacao {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+    .buttonAvaliacao {
+      background: var(--azul-escuro);
+      width: 145px;
+      height: 40px;
+      border-radius: 15px;
+      border: none;
+      color: var(--branco-primario);
+      cursor: pointer;
+    }
+    .buttonAvaliacao:hover {
+      opacity: 0.8;
+    }
+  }
+}

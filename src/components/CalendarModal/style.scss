@@ -1,0 +1,33 @@
+.modal-content {
+    position: absolute;
+    width: 300px;
+    
+    top: 40px;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
+    border: 1px solid #ccc;
+    background-color: red;
+    overflow: auto;
+    // webkit-overflow-scrolling: touch;
+    border-radius: 4px;
+    outline: none;
+    padding: 20px;
+   }
+   
+   .modal-header {
+    font-size: 2em;
+    text-align: center;
+   }
+   
+   .modal-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+   

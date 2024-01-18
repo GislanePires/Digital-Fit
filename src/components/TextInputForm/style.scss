@@ -1,0 +1,21 @@
+.text-input-form {
+  text-align: center;
+  color: var(--cinza-escuro);
+  font-weight: bold;
+  min-width: 250px;
+  box-shadow: 0px 2px 4px var(--sombra);
+  padding: 0.5em;
+  outline: 0;
+  border: 1px solid white;
+  border-bottom: 1px solid var(--cinza-primario);
+  border-radius: 4px;
+  margin-bottom: 1em;
+  margin-inline: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  
+  &:focus {
+    border-bottom: 2px solid var(--laranja-header);
+  }
+}

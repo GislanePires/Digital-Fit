@@ -1,0 +1,49 @@
+.Objetivos-treinos {
+  &-titulo {
+    text-align: center;
+    padding-top: 20px;
+  }
+}
+
+.treinos-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .treino-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+      box-shadow 0.3s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    &:hover {
+      transform: translateY(-10px);
+    }
+    .treino {
+      width: min-content;
+      background: var(--cinza-claro);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 8px 8px 8px 4px rgba(0, 0, 0, 0.2);
+
+      &-title {
+        text-align: center;
+        font-size: 30px;
+      }
+
+      &-image {
+        width: 225px;
+        padding: 20px 16px;
+        mix-blend-mode: multiply;
+        height: 300px;
+        object-fit: contain;
+      }
+
+      &-descricao {
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.CadastrarObjetivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+    margin-top: 20px;
+}
+.formCadastraObjetivo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap:20px;
+}
+.divButtonForm{
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+.buttonFormObjetivo{
+    background: var(--laranja-header);
+    width: 100px;
+    height: 37px;
+    font-weight: 600;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: transform .3s;
+    font-size: 15px;
+}
+
+.buttonFormObjetivo:hover {
+    background-color: var(--azul-escuro);
+    transform: scale(1.1);
+    filter: brightness(0.95);
+}
+.inputCadastrarObjetivo{
+    border-radius: 8px;
+}

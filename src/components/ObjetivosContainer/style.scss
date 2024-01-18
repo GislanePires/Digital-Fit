@@ -1,0 +1,228 @@
+.obj-container {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  height: 90%;
+  justify-content: center;
+
+  @media (max-width: 1281px) {
+    height: 100vh;
+  }
+
+  @media (max-width: 1025px) {
+    height: 80vh;
+    justify-content: flex-start;
+  }
+
+  @media (max-width: 850px) {
+    flex-direction: row;
+    max-height: none;
+    justify-content: center;
+  }
+
+  @media (max-width: 541px) {
+    height: 65vh;
+  }
+
+  .css-ahj2mt-MuiTypography-root {
+    font-size: 1rem;
+
+    @media (max-width: 1276px) {
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 1201px) {
+      font-size: 0.7rem;
+    }
+
+    @media (max-width: 1121px) {
+      font-size: 0.6rem;
+    }
+
+    @media (max-width: 933px) {
+      font-size: 0.5rem;
+    }
+
+    @media (max-width: 858px) {
+      font-size: 0.4rem;
+    }
+
+    @media (max-width: 850px) {
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 785px) {
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 640px) {
+      font-size: 0.8rem;
+    }
+
+    @media (max-width: 580px) {
+      font-size: 0.7rem;
+      text-wrap: nowrap;
+    }
+  }
+
+  .containerOptions {
+    padding: 20px 30px;
+    width: 80%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 100%;
+
+    @media(max-width: 541px) {
+      margin: 0;
+    }
+
+    @media(max-width: 541px) {
+      margin-bottom: 10px;
+    }
+
+    @media(max-width: 323px) {
+      width: 90%;
+    }
+
+    .options {
+      max-height: 80%;
+      display: inline-flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-content: space-between;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      @media(max-width: 1121px) {
+        max-height: 90%;
+      }
+
+      @media(max-width: 1025px) {
+        max-height: 75%;
+      }
+
+      @media(max-width: 541px) {
+        max-height: 50%;
+        margin-top: 30px;
+      }
+
+      @media(max-width: 520px) {
+        max-height: 90%;
+      }
+
+      @media(max-width: 511px) {
+        max-height: 90vh;
+      }
+
+      .option .message {
+        color: rgba(255, 143, 0, 1.00);
+      }
+
+      .message {
+        font-size: 18px;
+        color: #000;
+      }
+    }
+
+    .botoes {
+      display: flex;
+      justify-content: space-evenly;
+      gap: 20%;
+
+      @media(max-width: 1281px) {
+        margin-top: 20px;
+      }
+
+      @media(max-width: 971px) {
+        gap: 10%;
+      }
+
+      @media(max-width:850px) {
+        // padding-bottom: 40px;
+      }
+
+      @media(max-width: 415px) {
+        padding-bottom: 10px;
+        padding-top: 30px;
+      }
+
+      @media(max-width: 323px) {
+        gap: 20%;
+      }
+    }
+  }
+
+  .yogaImg {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: 100%; // Adicione esta linha para garantir que a imagem cubra a altura total
+      object-fit: cover; // Use 'cover' para garantir que a imagem cubra totalmente o contêiner
+    }
+  }
+}
+
+.obj-container {
+  @media screen and (max-width: 500px) {
+    align-items: center;
+  }
+
+  @media screen and (max-width: 431px) {
+    height: 100vh !important;
+  }
+
+  @media screen and (max-width: 415px) {
+    height: 105vh !important;
+  }
+
+  .yogaImg img {
+    width: 100%;
+  }
+
+  .botaoObjetivo2 {
+    background: var(--laranja-header);
+    width: 100px;
+    height: 37px;
+    font-weight: 600;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: transform .3s;
+    font-size: 15px;
+  }
+
+  .botaoObjetivo2:hover {
+    background-color: var(--azul-escuro);
+    transform: scale(1.1);
+    filter: brightness(0.95);
+  }
+
+  .botaoObjetivo {
+    background-color: var(--azul-escuro);
+    width: 100px;
+    height: 37px;
+    font-weight: 600;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: transform .3s;
+    font-size: 15px;
+  }
+
+  .botaoObjetivo:hover {
+    background: var(--laranja-header);
+    transform: scale(1.1);
+    filter: brightness(0.95);
+  }
+}

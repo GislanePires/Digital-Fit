@@ -1,0 +1,77 @@
+@import url("../../Global.css");
+
+#secao-acessibilidade {
+    justify-content: flex-end;
+    background: transparent;
+}
+
+#botao-acessibilidade {
+    justify-content: flex-end;
+    color: var(--font-color);
+    border: none;
+    background: none;
+    padding: 5px;
+}
+
+#icone-acessibilidade {
+    width: 28px;
+}
+
+#icone-contraste {
+    width: 24px;
+    filter: invert();
+
+    @media(max-width: 391px) {
+        width: 17px;
+    }
+}
+
+#lista-botoes {
+    width: 100%;
+}
+
+#lista-botoes>li {
+    margin-left: 5px;
+}
+
+#container-botoes {
+    display: flex;
+    gap: 0;
+
+    @media(max-width: px) {
+        gap: 0rem;
+    }
+
+}
+
+#container-botoes>.btnAce,
+#container-botoes>.btnAceC {
+    border: none;
+    border-radius: 5px;
+    padding: 0 8px;
+    height: 40px;
+    width: 40px;
+    font-size: 15px;
+    background-color: transparent;
+    color: var(--preto-primario);
+    cursor: pointer;
+
+    @media(max-width: 378px) {
+        width: 30px;
+        padding: 0;
+        font-size: 14px;
+    }
+
+}
+
+#container-botoes>.btnAceC {
+    margin-right: 10px;
+}
+
+#atalhos-navegacao ul li a {
+    color: var(--font-color);
+}
+
+#atalhos-navegacao ul li a:hover {
+    color: var(--hover-color);
+}

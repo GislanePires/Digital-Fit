@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;500;700&display=swap");
+
+:root {
+  --preto-primario: #000;
+  --preto-secundario: #2b3030;
+  --preto-terciario: rgba(
+    16,
+    16,
+    16,
+    0.79
+  ); /*cor para colocar de contraste na pagina*/
+  --preto-variant: rgba(54, 54, 54, 0.79);
+  --background-darkTheme: #222224;
+  --cinza-claro: rgba(217, 217, 217, 0.7);
+  --cinza-variant: #a5a5a5;
+  --cinza-primario: #d9d9d9;
+  --cinza-texto: #ccc7c77c;
+  --cinza-cards: #ccc7c7;
+  --cinza-escuro: #333;
+  --branco-primario: #fff;
+  --branco-secundario: #f2faf9;
+  --laranja-header: #f68712;
+  --amarelo-primario: #f5b963;
+  --amarelo-warning-bootstrap: #ffc107;
+  --sombra: rgba(0, 0, 0, 0.1);
+  --verde-claro: #d7fff1;
+  --verde-claro-secundario: #c5fbd8;
+  --verde: #1bb580;
+  --verde-primario: #166527;
+  --verde-escuro: #1a3724;
+  --azul-escuro: #1f5eaf;
+  --azul-medio: #007bff;
+  --azul-primario: #00c0ee;
+  --vermelho: #ff3232;
+
+  --backgroud-color: var(--cinza-primario: );
+  --font-color: var(--preto-primario);
+  --font-color-variant: var(--branco-primario);
+  --backgroud-section-color: var(--branco-primario);
+  --backgroud-section-color-variant: var(--branco-secundario);
+  --title-color: var(--verde-primario);
+  --title-color-variant: var(--preto-primario);
+  --hover-color: var(--verde-primario);
+  --accessibility-background-color: var(--cinza-claro);
+  --button-color: var(--verde-escuro);
+  --button-color-variant: var(--amarelo-primario);
+  --default-border-color: var(--preto-secundario);
+  --background-login: var(--preto-terciario);
+}
+
+html {
+  font-size: 18px !important;
+}
+
+body {
+  margin: 0;
+  background-color: var(--backgroud-color) !important;
+  color: var(--font-color) !important;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+label,
+input {
+  font-family: "Source Serif Pro", sans-serif;
+  margin: 0 !important;
+}
+
+label{
+  margin: 0 12px !important;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--preto-primario);
+}

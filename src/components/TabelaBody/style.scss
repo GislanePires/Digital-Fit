@@ -1,0 +1,91 @@
+.container-principal-tabela {
+    display: flex;
+    justify-content: center;
+
+    width: 90%;
+
+    flex-direction: row;
+
+    .tabela-div-principal-botoes {
+        margin-left: 10px;
+        margin-top: 85px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        .button-table {
+            display: flex;
+            // position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            right: 0;
+            margin-top: 5px;
+            gap: 5px;
+        }
+
+        .button-table-empty{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 40px;
+            
+        }
+
+        .button-table-container {
+            margin-top: -20px; /* Experimente valores negativos para ajustar a posição para cima */
+        }
+    }
+
+    .tabela-corpo-container {
+        display: flex;
+        overflow-x: scroll;
+        width: 90%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        justify-content: center;
+
+        .row-tabela {
+
+            .even-row {
+                background-color: #fde2c5;
+            }
+
+            .odd-row {
+                background-color: #fff8f2;
+            }
+        }
+
+        .conteudo {
+            flex: 1;
+            border: 1px solid #000;
+            padding: 0 8px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            word-break: break-all;
+            border-right: none;
+            border-top: none;
+            min-width: 150px;
+        }
+
+        .custom-row-height {
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .last-conteudo {
+            border-right: 1px solid #000;
+        }
+
+        .row-tabela {
+            display: flex;
+            flex-direction: row;
+        }
+        .scrollable-cell{
+            display: block;
+        }
+    }
+}

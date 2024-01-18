@@ -1,0 +1,57 @@
+.custom-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 100px;
+  z-index: 1000; 
+
+  .delete-modal-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .botoes-delete-modal{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    .delete-account {
+      background-color: #ee1a0b;
+      border: none;
+      color: white;
+      padding: 12px;
+      border-radius: 8%;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    .cancel-delete{
+      background-color: var(--azul-medio);
+      border: none;
+      color: white;
+      padding: 12px;
+      border-radius: 8%;
+      text-align: center;
+      text-decoration: none;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+}
+
+.custom-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}

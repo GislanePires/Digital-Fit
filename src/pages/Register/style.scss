@@ -1,0 +1,39 @@
+.register {
+  padding: 60px 30px;
+  background: var(--backgroud-color); 
+
+  label.boas-vindas {
+    margin-bottom: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="tel"] {
+    // box-shadow: 0px 2px 4px var(--sombra);
+    color: var(--cinza-escuro);
+  }
+
+  .forms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    margin-top: 50px;
+    
+    @media (max-width: 910px) {
+      flex-direction: column;
+    }
+
+    .form-section {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  .form-section-container {
+    height: auto;
+  }
+}

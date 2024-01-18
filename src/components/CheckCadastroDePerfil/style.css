@@ -1,0 +1,50 @@
+.bodyCadastroDePerfil {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 70%;
+    width: 40%; */
+  margin: 2%;
+  flex-direction: row !important;
+}
+
+.containerCadastroDePerfil {
+  display: flex;
+  flex-direction: row !important;
+}
+
+.quadradoCadastro {
+  width: 200px;
+  height: 200px;
+  border: 2px solid #333;
+
+  border-radius: 7px;
+  padding: 30px 10px 20px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-evenly;
+
+  position: relative;
+}
+
+.labelCadastroDePerfil {
+  margin-bottom: 10px;
+}
+
+.inputCadastroDePerfil {
+  margin-right: 7px !important;
+}
+
+.tituloEditavel {
+  background-color: var(--laranja-header);
+  padding: 3% 6% 3% 5%;
+  position: absolute;
+  border-radius: 7px;
+  /* margin-bottom: 10px !important;
+    margin-top: 0px !important; */
+  /* bottom: 10px;  */
+  top: -26px;
+  left: 12px;  
+  color: white;
+}

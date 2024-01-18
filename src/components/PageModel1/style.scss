@@ -1,0 +1,113 @@
+.container-PageModel1{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 90svh;
+  text-align: center;
+
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
+    max-height: none;
+  }
+  @media screen and (max-width: 850px) {
+    flex-direction: column;
+    max-height: none;
+  }
+  .children{
+    overflow-y: auto;
+    max-height: 100vh;
+    // margin-top: 50px;
+    width: 100%;
+    z-index: 1;
+    padding-top: 20px;
+
+    &-left{
+      box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    }
+    &-right{
+      box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .form_group{
+    padding: 40px 0 0;
+  }
+  .imagemMobile{
+    @media screen and (max-width:850px) {
+        height: 65% !important;
+    }
+}
+.formMobile{
+  display: flex;
+  justify-content: flex-start;
+}
+  .imagemBg {
+    display: flex;
+    align-items: center;
+
+    @media(max-width: 850px){
+      width: 100%;
+      max-width: 100%;
+      height: 38%;
+    }
+    // .left{
+    //   // box-shadow: 5px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    //   object-position: left;
+    // }
+
+    // .right{
+    //   // box-shadow: -5px 0px 10px 0px rgba(0, 0, 0, 0.3);
+    //   object-position: right;
+    // }
+
+    .imgPositionleft{
+      object-position: left;
+    }
+
+    .imgPositionright{
+      object-position: right;
+    }
+
+    .imgPositioncenter{
+      object-position: center;
+      @media(max-width: 850px){
+        object-position: center 24%;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+  }
+
+  .container-children {
+    flex-direction: column;
+    display: flex;
+    max-height: 90%;
+    height: 90%;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .obj-container {
+    align-items: center;
+  }
+
+  .yogaImg img {
+    width: 100%;
+  }
+}
+.container-PageModel1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 90svh;
+  text-align: center;
+
+
+}

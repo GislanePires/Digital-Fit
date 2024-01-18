@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap");
+
+:root {
+  --brand-color: hsl(32, 100%, 50%);
+  --font-title: "Montserrat", sans-serif;
+  --font-text: "Lato", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.card__title {
+  font-size: 35px !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--branco-primario) !important;
+  line-height: 1.1 !important;
+  text-shadow: 2px 2px 4px #000000;
+
+  @media screen and (max-width: 470px) {
+    font-size: 1.8rem !important;
+  }
+
+  @media screen and (max-width: 440px) {
+    font-size: 1.5rem !important;
+  }
+
+  @media screen and (max-width: 376px) {
+    font-size: 1.3rem !important;
+  }
+  @media screen and (max-width: 343px) {
+    font-size: 1.1rem !important;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 0.9rem !important;
+  }
+}
+
+.card__description {
+  font-family: var(--font-text) !important;
+  font-size: 20px !important;
+  line-height: 1.5 !important;
+  color: var(--branco-primario) !important;
+
+  @media screen and (max-width: 2150px) {
+    font-size: 22px !important;
+  }
+
+  @media screen and (max-width: 1880px) {
+    font-size: 20px !important;
+  }
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1em) !important;
+}
+
+.cardAnimadoContainer {
+  .cardAnimado {
+    display: grid;
+    place-items: center;
+    width: 90%;
+
+    height: 100%;
+    overflow: hidden;
+    border-radius: 0.625rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+
+    @media screen and (max-width: 1110px) {
+      margin-bottom: 4%;
+      width: 100%;
+    }
+
+    @media screen and (max-width: 500px) {
+      min-width: 100%;
+    }
+  }
+
+  .cardAnimado > * {
+    grid-column: 1 / 2;
+    grid-row: 1 /2;
+  }
+
+  .card__background {
+    object-fit: cover;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .card__content {
+    --flow-space: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-end;
+    height: 80%;
+    padding: 7% 1.25rem 1.875rem;
+    background: linear-gradient(
+      180deg,
+      hsla(0, 0%, 0%, 0) 0%,
+      hsla(0, 0%, 0%, 0.3) 10%,
+      hsl(0, 0%, 0%) 100%
+    );
+
+    @media screen and (max-width: 2150px) {
+      height: 50%;
+    }
+
+    @media screen and (max-width: 1770px) {
+      height: 60%;
+    }
+
+    @media screen and (max-width: 1460px) {
+      height: 75%;
+    }
+
+    @media screen and (max-width: 1250px) {
+      height: 80%;
+    }
+
+    @media screen and (max-width: 1210px) {
+      height: 94%;
+    }
+
+    @media screen and (max-width: 1110px) {
+      height: 50%;
+    }
+
+    @media screen and (max-width: 920px) {
+      height: 60%;
+    }
+
+    @media screen and (max-width: 665px) {
+      height: 70%;
+    }
+
+    @media screen and (max-width: 610px) {
+      height: 80%;
+    }
+
+    @media screen and (max-width: 550px) {
+      height: 90%;
+    }
+
+    @media screen and (max-width: 550px) {
+      height: 100%;
+    }
+  }
+
+  .card__content--container {
+    --flow-space: 1.25rem;
+  }
+
+  .card__title {
+    position: relative;
+    width: fit-content;
+    width: -moz-fit-content;
+  }
+
+  .card__title::after {
+    content: "";
+    position: absolute;
+    height: 0.3125rem;
+    width: calc(100% + 1.25rem);
+    bottom: calc((1.25rem - 0.5rem) * -1);
+    left: -1.25rem;
+    background-color: var(--brand-color);
+  }
+
+  .card__button {
+    padding: 0.2em 1em;
+    width: fit-content;
+    width: -moz-fit-content;
+    font-weight: bold;
+    border-radius: 0.45em;
+    border: none;
+    background-color: var(--brand-color);
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    color: var(--branco-primario);
+
+    @media screen and (max-width: 376px) {
+      font-size: 1.05rem !important;
+    }
+
+    @media screen and (max-width: 290px) {
+      font-size: 0.8rem !important;
+    }
+  }
+
+  .card__button:focus {
+    outline: 2px solid black;
+    outline-offset: -5px;
+  }
+
+  @media (any-hover: hover) and (any-pointer: fine) {
+    .card__content {
+      transform: translateY(62%);
+      transition: transform 300ms ease-out;
+      transition-delay: 300ms;
+    }
+
+    .card__title::after {
+      opacity: 0;
+      transform: scaleX(0);
+      transition: opacity 1000ms ease-in, transform 500ms ease-out;
+      transition-delay: 500ms;
+      transform-origin: right;
+    }
+
+    .card__background {
+      transition: transform 500ms ease-in;
+    }
+
+    .card__content--container > :not(.card__title),
+    .card__button {
+      opacity: 0;
+      transition: transform 500ms ease-out, opacity 500ms ease-out;
+    }
+
+    .cardAnimado:hover,
+    .cardAnimado:focus-within {
+      transform: scale(1.05);
+      transition: transform 500ms ease-in;
+    }
+
+    .cardAnimado:hover .card__content,
+    .cardAnimado:focus-within .card__content {
+      transform: translateY(0);
+      transition: transform 500ms ease-in;
+    }
+
+    .cardAnimado:focus-within .card__content {
+      transition-duration: 0ms;
+    }
+
+    .cardAnimado:hover .card__background,
+    .cardAnimado:focus-within .card__background {
+      transform: scale(1.3);
+    }
+
+    .cardAnimado:hover .card__content--container > :not(.card__title),
+    .cardAnimado:hover .card__button,
+    .cardAnimado:focus-within .card__content--container > :not(.card__title),
+    .cardAnimado:focus-within .card__button {
+      opacity: 1;
+      transition: opacity 500ms ease-in;
+      transition-delay: 1000ms;
+    }
+
+    .cardAnimado:hover .card__title::after,
+    .cardAnimado:focus-within .card__title::after {
+      opacity: 1;
+      transform: scaleX(1);
+      transform-origin: left;
+      transition: opacity 500ms ease-in, transform 500ms ease-in;
+      transition-delay: 500ms;
+    }
+  }
+}

@@ -1,0 +1,118 @@
+@import "../../Global.css";
+
+footer {
+  background-color: #333;
+  color: var(--branco-primario);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 20vh;
+  
+  .containerFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    min-height: 20vh;
+
+    @media screen and (max-width: 655px) {
+      flex-direction: column;
+    }
+
+    .social-icons a,
+    .links a,
+    .contact a {
+      color: var(--branco-primario);
+      text-decoration: none;
+      margin-right: 15px;
+      flex-wrap: wrap !important;
+
+      @media screen and (max-width: 373px) {
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        justify-content: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+      }
+    }
+
+    .social-icons a:hover,
+    .links a:hover,
+    .contact a:hover {
+      flex-wrap: wrap;
+      text-decoration: underline;
+    }
+
+    .social-icons svg {
+      flex-wrap: wrap;
+      font-size: 24px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .links a,
+    .contact p {
+      flex-wrap: wrap;
+      margin-bottom: 5px;
+
+      @media screen and (max-width: 525px) {
+        flex-direction: column;
+      }
+
+      @media screen and (max-width: 373px) {
+        flex-wrap: wrap !important;
+        align-items: center !important;
+        justify-content: center !important;
+        display: flex !important;
+        flex-direction: column !important;
+      }
+    }
+
+    .contact a {
+      align-items: center;
+      margin-right: 30px !important;
+      flex-wrap: wrap;
+
+      @media screen and (max-width: 376px) {
+        font-size: 1.05rem !important;
+      }
+
+      @media screen and (max-width: 373px) {
+        font-size: 1rem !important;
+      }
+
+      @media screen and (max-width: 274px) {
+        font-size: 0.9rem !important;
+        margin-right: 80px !important;
+      }
+    }
+
+    .contact a svg {
+      margin-right: 30px !important;
+      flex-wrap: wrap;
+    }
+  }
+
+  .social-icons,
+  .links,
+  .contact {
+    text-align: center;
+    flex-direction: column;
+    width: 33%;
+    flex-wrap: wrap !important;
+  }
+
+  .copyr {
+    width: 100%;
+    flex-wrap: wrap;
+    .copy {
+      text-align: center;
+      bottom: 5px !important;
+      margin-bottom: 1.5% !important;
+      color: var(--branco-primario);
+    }
+  }
+}
